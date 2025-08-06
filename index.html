@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Beauty - Distribuidora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/GR_logo.jpg" type="image/jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="particles-js" id="particles-js"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="header-normal">
+        <div class="logo-container">
+            <img src="images/GR_logo-removebg-preview.png" alt="GR Beauty"
+                class="logo animate__animated animate__fadeInLeft animate__slower">
+            <span class="logo-text">GR BEAUTY DISTRIBUIDORA</span>
+        </div>
+
+        <nav class="menu">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#produtos" class="nav-link animate__animated animate__fadeInDown">Produtos</a></li>
+                <li><a href="#cadastro"
+                        class="nav-link animate__animated animate__fadeInDown animate__delay-1s">Cadastro</a></li>
+            </ul>
+            <div class="menu-line"></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Introdução -->
+        <section class="intro-section">
+            <div class="content-wrapper">
+                <h1 class="intro-title">Muito Prazer,<br>Somos a GR BEAUTY</h1>
+                <div class="intro-content">
+                    <p>Nascemos com o propósito de nos tornarmos referência no segmento de beleza na Bahia e em Sergipe.
+                    </p>
+                    <p>Assumimos o compromisso de atender às necessidades dos cabeleireiros, oferecendo soluções de
+                        altíssima qualidade e com tecnologia de ponta.</p>
+                    <p>Nosso objetivo é impulsionar as vendas e aumentar a rentabilidade dos salões, por meio de
+                        serviços especializados e produtos de alta performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Produtos -->
+        <section id="produtos" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title animate__animated animate__fadeIn">Nossos Parceiros</h2>
+                <div class="products-container">
+                    <!-- Produto 1: Papel para Mechas -->
+                    <div class="product-card animate__animated animate__fadeInUp">
+                        <div class="image-wrapper">
+                            <img src="images/Papel_para_Mechas.jpg" alt="Papel para Mechas" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3>PAPEL PARA MECHAS</h3>
+                            <p class="product-description">Papel sustentável para descoloração</p>
+                            <p>Indústria líder de mercado no segmento de papéis sustentáveis para descoloração.</p>
+                            <div class="product-social">
+                                <a href="https://www.instagram.com/papelparamechas" target="_blank"
+                                    class="social-link"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2: Z'WECK -->
+                    <div class="product-card animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="image-wrapper">
+                            <img src="images/Z'WECK.jpg" alt="Z'WECK" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Z'WECK KOSMETIK</h3>
+                            <p class="product-description">Tecnologia avançada em cosméticos</p>
+                            <p>Empresa que se destaca por sua tecnologia avançada e formulação alemã em criação de
+                                produtos capilares, cuidados com a pele e nutracêuticos.</p>
+                            <div class="product-social">
+                                <a href="https://www.instagram.com/zweck.kosmetik" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i> Siga no Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Cadastro -->
+        <section id="cadastro" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title animate__animated animate__fadeIn">Seja nosso cliente</h2>
+                <p class="form-subtitle">Faça o seu cadastro abaixo:</p>
+                <div class="form-container animate__animated animate__fadeInUp">
+                    <form action="https://formspree.io/f/xyzpdoop" method="POST">
+                        <!-- Campo oculto opcional para personalizar o assunto -->
+                        <input type="hidden" name="_subject" value="Novo cadastro recebido">
+                        <!-- Campo oculto opcional para redirecionamento após envio -->
+                        <input type="hidden" name="_next"
+                            value="http://127.0.0.1:5500/GR%20Beauty%20Distribuidora/obrigado.html">
+                        <!-- Campo oculto para prevenir spam (honeypot) -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <!-- Seção 1: Informações Básicas -->
+                        <h3>Informações Básicas</h3>
+                        <label>Tipo de Cliente *</label>
+                        <select name="Tipo de Cliente" required>
+                            <option value=""></option>
+                            <option value="Pessoa Física">Pessoa Física</option>
+                            <option value="Pessoa Jurídica">Pessoa Jurídica</option>
+                        </select>
+
+                        <label>Nome Completo/Razão Social *</label>
+                        <input type="text" name="Nome Completo" required>
+
+                        <label>CPF/CNPJ *</label>
+                        <input type="text" name="CPF/CNPJ" required>
+
+                        <label>Data de Nascimento *</label>
+                        <input type="date" name="Data de Nascimento" required>
+
+                        <label>País *</label>
+                        <input type="text" name="País" required>
+
+                        <!-- Seção Endereço Pessoal -->
+                        <h3>Endereço Pessoal</h3>
+
+                        <label>CEP *</label>
+                        <input type="text" name="CEP Pessoal" class="cep-input" required>
+
+                        <label>Logradouro *</label>
+                        <select name="Tipo Logradouro Pessoal" required>
+                            <option value=""></option>
+                            <option value="Rua">Rua</option>
+                            <option value="Avenida">Avenida</option>
+                            <option value="Travessa">Travessa</option>
+                            <option value="Alameda">Alameda</option>
+                            <option value="Praça">Praça</option>
+                            <option value="Rodovia">Rodovia</option>
+                            <option value="Viela">Viela</option>
+                            <option value="Estrada">Estrada</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+
+                        <label>Nome do Logradouro *</label>
+                        <input type="text" name="Logradouro Pessoal" required>
+
+                        <label>Número *</label>
+                        <div class="number-container">
+                            <input type="text" name="Número Pessoal" class="number-input" required>
+                            <label class="no-number-label">
+                                <input type="checkbox" name="Sem Número Pessoal" class="no-number-checkbox">
+                                Sem número
+                            </label>
+                        </div>
+
+                        <label>Complemento</label>
+                        <input type="text" name="Complemento Pessoal">
+
+                        <label>Bairro *</label>
+                        <input type="text" name="Bairro Pessoal" required>
+
+                        <label>Cidade *</label>
+                        <input type="text" name="Cidade Pessoal" required>
+
+                        <label>Estado *</label>
+                        <input type="text" name="Estado Pessoal" required>
+
+                        <!-- Seção Endereço de Entrega -->
+                        <h3>Endereço de Entrega</h3>
+                        <div class="same-address-container">
+                            <label>
+                                <input type="checkbox" id="same-address-checkbox">
+                                Mesmo endereço do endereço pessoal
+                            </label>
+                        </div>
+
+                        <div id="delivery-address-fields">
+                            <label>CEP</label>
+                            <input type="text" name="delivery_cep" class="cep-input" placeholder="00000-000">
+
+                            <label>Tipo de Logradouro</label>
+                            <select name="delivery_street_type">
+                                <option value="">Selecione</option>
+                                <option value="Rua">Rua</option>
+                                <option value="Avenida">Avenida</option>
+                                <option value="Travessa">Travessa</option>
+                                <option value="Alameda">Alameda</option>
+                                <option value="Rodovia">Rodovia</option>
+                            </select>
+
+                            <label>Logradouro</label>
+                            <input type="text" name="delivery_street" placeholder="Nome da rua/avenida">
+
+                            <label>Número</label>
+                            <div class="number-container">
+                                <input type="text" name="delivery_number" placeholder="Nº">
+                                <label class="no-number-label">
+                                    <input type="checkbox" name="delivery_no_number">
+                                    Sem número
+                                </label>
+                            </div>
+
+                            <label>Complemento</label>
+                            <input type="text" name="delivery_complement" placeholder="Apto, Bloco, etc.">
+
+                            <label>Bairro</label>
+                            <input type="text" name="delivery_neighborhood">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Cidade</label>
+                                    <input type="text" name="delivery_city">
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado</label>
+                                    <input type="text" name="delivery_state" maxlength="2" placeholder="UF">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Seção 2: Contato -->
+                        <h3>Informações de Contato</h3>
+                        <label>Telefone/Celular *</label>
+                        <input type="tel" name="Telefone" required>
+
+                        <label>E-mail *</label>
+                        <input type="email" name="email" required>
+
+                        <!-- Seção 3: Dados Profissionais -->
+                        <h3>Dados Profissionais</h3>
+                        <label>Tipo de Estabelecimento *</label>
+                        <select name="Tipo de Estabelecimento" required>
+                            <option value=""></option>
+                            <option value="Salão de Beleza">Salão de Beleza</option>
+                            <option value="Barbearia">Barbearia</option>
+                            <option value="Clínica de Estética">Clínica de Estética</option>
+                            <option value="Loja de Cosméticos">Loja de Cosméticos</option>
+                            <option value="Distribuidor">Distribuidor</option>
+                            <option value="Profissional Autônomo">Profissional Autônomo</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+
+                        <label>Outro Estabelecimento</label>
+                        <input type="text" name="Outro Estabelecimento">
+
+                        <!-- Seção 4: Documentos -->
+                        <h3>Documentos</h3>
+                        <label>Inscrição Estadual *</label>
+                        <input type="text" name="Inscrição Estadual" required>
+
+                        <label>Inscrição Municipal *</label>
+                        <input type="text" name="Inscrição Municipal" required>
+
+                        <!-- Seção 5: Observações -->
+                        <h3>Observações</h3>
+                        <label>Informações adicionais *</label>
+                        <textarea name="Observações" rows="4" required></textarea>
+
+                        <label>
+                            <input type="checkbox" name="Aceito Termos" required>
+                            Li e aceito os <a href="#" target="_blank">termos de uso</a> e <a href="#"
+                                target="_blank">política de
+                                privacidade</a>
+                        </label>
+
+                        <button type="submit">Finalizar Cadastro</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/GR_logo-removebg-preview.png" alt="GR Beauty Distribuidora" class="logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 GR Beauty Distribuidora. Todos os direitos reservados.</p>
+                <p>CNPJ: 60.597.746/0001-56</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gr_beauty_distribuidora" target="_blank" class="social-icon"
+                    aria-label="Instagram da GR Beauty">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
